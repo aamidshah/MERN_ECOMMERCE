@@ -12,22 +12,6 @@
   ],
   "routes": [
     {
-      "src": "/products",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/products/(.*)",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/users",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/users/(.*)",
-      "dest": "/index.js"
-    },
-    {
       "src": "/manifest.json",
       "dest": "/public/build/manifest.json"
     },
