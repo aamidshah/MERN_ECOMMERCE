@@ -12,16 +12,25 @@
   ],
   "routes": [
     {
+      "src": "/products",
+      "dest": "index.js"
+    },
+    {
+      "src": "/products/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/",
+      "dest": "/public/build/index.html"
+    },
+    {
       "src": "/manifest.json",
       "dest": "/public/build/manifest.json"
     },
     {
-      "src": "/static/(.*)",
+      "src": "/static/(.+)",
       "dest": "/public/build/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/build/index.html"
     }
-  ]
+    
+  ]   
 }
