@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "public/build/**",
+      "src": "build/**",
       "use": "@vercel/static"
     }
   ],
@@ -21,15 +21,12 @@
     },
     {
       "src": "/",
-      "dest": "/public/build/index.html"
+      "dest": "build/index.html"
     },
+  
     {
-      "src": "/manifest.json",
-      "dest": "/public/build/manifest.json"
-    },
-    {
-      "src": "/static/(.+)",
-      "dest": "/public/build/static/$1"
+      "src": "/(.+)",
+      "dest": "/build/$1"
     }
     
   ]   
