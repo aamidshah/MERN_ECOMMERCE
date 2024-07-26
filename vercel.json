@@ -28,8 +28,8 @@
       "dest": "/index.js"
     },
     {
-      "src": "/public/build/(.*)",
-      "dest": "/public/build/$1"
+      "src": "/manifest.json",
+      "dest": "/public/build/manifest.json"
     },
     {
       "src": "/(.*)",
