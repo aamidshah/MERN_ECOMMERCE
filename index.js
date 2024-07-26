@@ -29,8 +29,9 @@ server.use(express.static(path.join(__dirname, process.env.PUBLIC_DIR)));
 server.use(cors());
 server.use("/products", productRouter.router);
 server.use("/users", userRouter.router);
+
 server.use('*',(req,res)=>{
-  console.log(path.join(__dirname, 'public', 'build', 'index.html'));
+  
   res.sendFile(path.join(__dirname, process.env.PUBLIC_DIR, 'index.html'));
 
 }
