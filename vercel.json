@@ -28,6 +28,10 @@
       "dest": "/index.js"
     },
     {
+      "src": "/public/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/build/index.html"
     }
