@@ -1,6 +1,5 @@
 // these are called controller cause they handle the logic between diff routes
 
-const fs = require("fs");
 const model = require("../model/product");
 const Product = model.Product;
 const mongoose = require("mongoose");
