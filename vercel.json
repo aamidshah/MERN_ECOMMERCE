@@ -32,6 +32,10 @@
       "dest": "/public/build/manifest.json"
     },
     {
+      "src": "/static/(.*)",
+      "dest": "/public/build/static/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/build/index.html"
     }
